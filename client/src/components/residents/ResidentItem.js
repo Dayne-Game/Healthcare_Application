@@ -24,7 +24,7 @@ const ResidentItem = ({
     </p>
     {showActions && (
       <Fragment>
-        {!auth.loading && resthomeid === auth.resthome._id && (
+        {!auth?.loading && resthomeid === auth?.resthome?._id && (
           <button
             onClick={() => deleteResident(_id)}
             type='button'
